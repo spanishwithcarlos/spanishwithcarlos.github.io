@@ -12,6 +12,10 @@ CSS, with no framework, database, tracking scripts, or paid dependencies.
     sitemap.xml
     images/spanish-with-carlos-hero.webp
     images/spanish-with-carlos-hero.jpg
+    images/carlos-cabrera-portrait.webp
+    images/carlos-cabrera-portrait.jpg
+    images/spanish-culture-margin.webp
+    images/spanish-landmarks-margin.webp
 
 ## Final website address
 
@@ -36,6 +40,19 @@ The approved Spanish with Carlos travel poster is included in two formats. The
 browser uses the smaller WebP file when supported and keeps the JPEG as a
 fallback and social-sharing image. Both files should remain in the images
 folder when the site is uploaded.
+
+The hero layout displays the complete poster proportionally. The header uses a
+text-only wordmark, and the homepage headline is Online Spanish lessons that
+make sense.
+
+The About section includes Carlos's portrait and states that he was born in the
+United States and is a native speaker of English and Spanish. Smaller site text
+has also been enlarged for improved readability.
+
+The color palette is sampled from the approved travel poster: Mediterranean
+blue, brick red, saffron, warm parchment, and pale teal. Two custom transparent
+illustrations add Spanish cultural, food, and landmark motifs at the page edges
+on wider screens; they are hidden on smaller screens to preserve readability.
 
 ## Brand name
 
