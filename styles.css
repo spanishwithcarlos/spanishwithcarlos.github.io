@@ -36,8 +36,8 @@ body {
   color: var(--ink);
   background: var(--paper);
   font-family: var(--sans);
-  font-size: 1.0625rem;
-  line-height: 1.7;
+  font-size: 1.125rem;
+  line-height: 1.68;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -79,22 +79,22 @@ h3 {
 }
 
 h1 {
-  max-width: 14ch;
+  max-width: 13ch;
   margin-bottom: 1.5rem;
-  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  font-size: clamp(3.15rem, 5.5vw, 5.4rem);
   letter-spacing: -0.04em;
   line-height: 1.05;
 }
 
 h2 {
   margin-bottom: 1.25rem;
-  font-size: clamp(2.25rem, 4.5vw, 4rem);
+  font-size: clamp(2.5rem, 4.6vw, 4.2rem);
   letter-spacing: -0.035em;
 }
 
 h3 {
   margin-bottom: 0.75rem;
-  font-size: 1.55rem;
+  font-size: 1.7rem;
   letter-spacing: -0.02em;
 }
 
@@ -114,7 +114,7 @@ h3 {
 .eyebrow {
   margin-bottom: 1rem;
   color: var(--terracotta-dark);
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 800;
   letter-spacing: 0.16em;
   line-height: 1.3;
@@ -123,22 +123,22 @@ h3 {
 
 .section-lead {
   color: var(--navy-soft);
-  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
   line-height: 1.55;
 }
 
 .button {
   display: inline-flex;
-  min-height: 3.2rem;
+  min-height: 3.5rem;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.35rem;
+  padding: 1rem 1.5rem;
   border: 2px solid var(--terracotta);
   border-radius: 999px;
   color: var(--white);
   background: var(--terracotta);
   box-shadow: 0 8px 22px rgba(160, 49, 26, 0.18);
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   font-weight: 750;
   line-height: 1.2;
   text-align: center;
@@ -159,9 +159,9 @@ h3 {
 }
 
 .button-small {
-  min-height: 2.65rem;
-  padding: 0.67rem 1rem;
-  font-size: 0.9rem;
+  min-height: 3rem;
+  padding: 0.75rem 1.1rem;
+  font-size: 0.95rem;
 }
 
 .button-light {
@@ -233,13 +233,13 @@ h3 {
 
 .brand-name {
   font-family: var(--serif);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 .brand-tagline {
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -255,7 +255,7 @@ h3 {
 
 .main-nav a {
   color: var(--ink);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -283,7 +283,7 @@ h3 {
   max-width: 44rem;
   margin-bottom: 1rem;
   color: var(--navy-soft);
-  font-size: clamp(1.18rem, 2.2vw, 1.45rem);
+  font-size: clamp(1.35rem, 2.2vw, 1.65rem);
   line-height: 1.55;
 }
 
@@ -306,7 +306,7 @@ h3 {
   padding: 0;
   gap: 0.65rem 1.2rem;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 700;
   list-style: none;
   flex-wrap: wrap;
@@ -361,33 +361,30 @@ h3 {
   text-align: center;
 }
 
-.section-intro .container,
+.language-section .container,
 #classes .container {
   position: relative;
   z-index: 1;
 }
 
-.section-intro::before,
-#classes::after {
+.section-art {
   position: absolute;
   z-index: 0;
-  display: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  filter: saturate(1.06);
+  top: 50%;
+  width: clamp(8rem, 10vw, 10.5rem);
+  opacity: 0.72;
   pointer-events: none;
+  transform: translateY(-50%);
 }
 
-.section-intro::before {
-  top: 50%;
-  left: clamp(-6rem, -3.5vw, -2rem);
-  width: clamp(9rem, 13vw, 13rem);
-  aspect-ratio: 454 / 768;
-  background-image: url("images/spanish-culture-margin.webp");
-  opacity: 0.6;
-  transform: translateY(-50%);
+.section-art img {
+  width: 100%;
+  height: auto;
+  filter: saturate(1.08);
+}
+
+.section-art-culture {
+  left: max(-2rem, calc((100vw - var(--max-width)) / 2 - 10rem));
 }
 
 #classes {
@@ -395,14 +392,8 @@ h3 {
   overflow: clip;
 }
 
-#classes::after {
-  top: 50%;
-  right: clamp(-6rem, -3.5vw, -2rem);
-  width: clamp(9rem, 13vw, 13rem);
-  aspect-ratio: 512 / 761;
-  background-image: url("images/spanish-landmarks-margin.webp");
-  opacity: 0.56;
-  transform: translateY(-50%);
+.section-art-landmarks {
+  right: max(-2rem, calc((100vw - var(--max-width)) / 2 - 10rem));
 }
 
 .section-intro h2 {
@@ -445,6 +436,8 @@ h3 {
 }
 
 .language-section {
+  position: relative;
+  overflow: clip;
   background: var(--cream);
 }
 
@@ -654,7 +647,7 @@ h3 {
 .review figcaption {
   margin-top: auto;
   color: var(--terracotta-dark);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 800;
 }
 
@@ -662,7 +655,7 @@ h3 {
   max-width: 47rem;
   margin: 2rem auto 0;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -696,7 +689,7 @@ h3 {
   color: var(--navy);
   cursor: pointer;
   font-family: var(--serif);
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.35;
   list-style: none;
@@ -767,7 +760,7 @@ h3 {
 .cta-note {
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -789,13 +782,13 @@ h3 {
   margin-bottom: 0.2rem;
   color: var(--cream);
   font-family: var(--serif);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .site-footer p:not(.footer-name) {
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .footer-links {
@@ -806,7 +799,7 @@ h3 {
 
 .footer-links a {
   color: var(--cream);
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   font-weight: 700;
 }
 
@@ -830,16 +823,31 @@ h3 {
 
 }
 
-@media (min-width: 78rem) {
-  .section-intro::before,
-  #classes::after {
-    display: block;
+@media (max-width: 82rem) {
+  .section-art {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    width: min(9rem, 32vw);
+    margin: -2rem auto 1.75rem;
+    opacity: 0.92;
+    transform: none;
+  }
+
+  .section-art-landmarks {
+    width: min(10rem, 35vw);
   }
 }
 
 @media (max-width: 52rem) {
   html {
     scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    font-size: 1.1875rem;
+    line-height: 1.65;
   }
 
   .section {
@@ -887,6 +895,10 @@ h3 {
     min-height: 23rem;
   }
 
+  .button {
+    min-height: 3.75rem;
+  }
+
   .faq-heading {
     position: static;
   }
@@ -915,11 +927,11 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(2.55rem, 12vw, 3.45rem);
+    font-size: clamp(3rem, 13vw, 4rem);
   }
 
   h2 {
-    font-size: clamp(2.1rem, 10vw, 2.9rem);
+    font-size: clamp(2.4rem, 10.5vw, 3.1rem);
   }
 
   .hero-actions {
@@ -951,7 +963,7 @@ h3 {
   }
 
   .faq-list summary {
-    font-size: 1.12rem;
+    font-size: 1.3rem;
   }
 }
 
