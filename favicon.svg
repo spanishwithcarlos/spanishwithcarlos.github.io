@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Carlos Cabrera">
-  <rect width="64" height="64" rx="18" fill="#13283f"/>
-  <circle cx="50" cy="14" r="8" fill="#a84730"/>
+  <rect width="64" height="64" rx="18" fill="#123f5a"/>
+  <circle cx="50" cy="14" r="8" fill="#cf8735"/>
   <text
     x="32"
     y="41"
-    fill="#f7f1e7"
+    fill="#f3d5a7"
     font-family="Georgia, serif"
     font-size="24"
     font-weight="700"
